@@ -38,20 +38,43 @@
 </head>
 
 
-<body>
+<body ng-controller="mainController">
 
-    <div ng-controller="mainController">
+<div id="wrapper">
 
-        <table>
-            <tr><td>1</td><td>2</td><td>3</td></tr>
-            <tr><td>4</td><td>5</td><td>6</td></tr>
-            <tr><td>7</td><td>8</td><td>9</td></tr>
+        <div id="caption">
+            <div id="you">You: X</div> <div id="computer">Computer: O</div>
+        </div>
+        <div id="container"  data-ng-click="draw($event)">
+            <div class="square"><img src=""  id="00"/></div>
+            <div class="square"><img src=""  id="01"/></div>
+            <div class="square"><img src=""  id="02"/></div>
+            <div class="square"><img src=""  id="10"/></div>
+            <div class="square"><img src=""  id="11"/></div>
+            <div class="square"><img src=""  id="12"/></div>
+            <div class="square"><img src=""  id="20"/></div>
+            <div class="square"><img src=""  id="21"/></div>
+            <div class="square"><img src=""  id="22"/></div>
+
+            <!--<div class="square"></div>-->
+            <!--<div class="square"></div>-->
+            <!--<div class="square"></div>-->
+            <!--<div class="square"></div>-->
+            <!--<div class="square"></div>-->
+            <!--<div class="square"></div>-->
+            <!--<div class="square"></div>-->
+            <!--<div class="square"></div>-->
+            <!--<div class="square"></div>-->
 
 
-        </table>
+        </div>
+
+        <div id="result" class="blinkElement" ng-show="message.length>0">{{message}}</div>
 
 
-    </div>
+
+</div>
+
 
 
 </body>

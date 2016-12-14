@@ -1,7 +1,111 @@
-table{
+body{
+ margin:0;
+ padding:0;
+ background-color: #6F0101;
+}
 
- height: 30%;
- width: 30%;
- background
+#container {
+ /*width: 27vw;*/
+ /*height: 27vw;*/
+ /*margin: 5% auto;*/
+ /*background-color: #2b669a;*/
 
+}
+.square{
+ border:1px solid #000;
+ width: 9vw;
+ height:9vw;
+ float:left;
+ background-color: white;
+}
+img{
+ height:100%;
+ width: 100%;
+ background-color: white;
+}
+
+#caption{
+ width: 27vw;
+ height: 4vw;
+ padding:5%;
+ font-family: "Comic Sans MS", "Comic Sans", cursive;
+ font-size: 25px;
+ color: white;
+ /*background-color: red;*/
+
+}
+#you{
+ float:left;
+}
+#computer{
+ float:right;
+}
+#wrapper{
+ width: 27vw;
+
+ margin:auto;
+ /*background-color: #1A01CC;*/
+
+}
+
+#result{
+ clear:both;
+ width: 27vw;
+ height: 4vw;
+ padding:5%;
+ font-family: "Comic Sans MS", "Comic Sans", cursive;
+ font-size: 5em;
+ color: darkorange;
+ text-align:center;
+}
+
+
+.blinkElement{
+
+ /*Blinl style*/
+ -moz-animation-duration: 400ms;
+ -moz-animation-name: blink;
+ -moz-animation-iteration-count: infinite;
+ -moz-animation-direction: alternate;
+
+ -webkit-animation-duration: 400ms;
+ -webkit-animation-name: blink;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-direction: alternate;
+
+ animation-duration: 400ms;
+ animation-name: blink;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+
+@-moz-keyframes blink {
+ from {
+  opacity: 1;
+ }
+
+ to {
+  opacity: 0;
+ }
+}
+
+@-webkit-keyframes blink {
+ from {
+  opacity: 1;
+ }
+
+ to {
+  opacity: 0;
+ }
+}
+
+@keyframes blink {
+ from {
+  opacity: 1;
+ }
+
+ to {
+  opacity: 0;
+ }
 }
