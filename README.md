@@ -27,3 +27,8 @@ For running the app
 ```bash
 $ node index
 ```
+
+## Screen
+
+
+![screen](/screenshot/tictactoe.gif?raw=true "Optional Title")
