@@ -1,5 +1,5 @@
 # tictactoe
-This is simple tic tac toe game.
+This is simple tic tac toe game. Min-Max algorithm is used to compute the computer turn.
 
 ## Requirements
 
